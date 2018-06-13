@@ -17,5 +17,14 @@ describe("Coins", function() {
   it("should give 20 pence for 20", function() {
     expect(coins.change(20)).toEqual([20]);
   })
+  it("should give 50 pence for 50", function() {
+    expect(coins.change(50)).toEqual([50]);
+  })
+  it("should give 1 pound for 100", function() {
+    expect(coins.change(100)).toEqual([100]);
+  })
+  it("should give 200 pence for 200", function() {
+    expect(coins.change(200)).toEqual([200]);
+  })
 
 })
