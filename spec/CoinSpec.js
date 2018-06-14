@@ -42,5 +42,9 @@ describe("Coin", function() {
     coin.change(7)
     expect(coin.coins).toEqual([5, 2]);
   });
+  it("should give 1*50p, 2*20p, 1*5p and 2*2p for 99", function() {
+    coin.change(99)
+    expect(coin.coins).toEqual([50, 20, 20, 5, 2, 2]);
+  });
 
 })
